@@ -13,3 +13,4 @@ Then Validate As Status Code
 Then validate "Git Pocket Guide" at jsonpath "books[0].title" title present
 Then validate "Learning JavaScript Design Patterns" at jsonpath "books[1].title" title present
 Then validate "Designing Evolvable Web APIs with ASP.NET" at jsonpath "books[2].title" title present
+Then validate "Designing Evolvable Web APIs with ASP.NET" at jsonpath "books[2].title" title present

@@ -13,11 +13,14 @@ import io.restassured.response.Response;
 public class Get_FetData_StepDefination_code {
 	
 Response response  = null;
-	
-	@Given("Hit the bookstore api")
-	public void hit_the_bookstore_api() {
-		response = RestAssured.get("https://demoqa.com/BookStore/v1/Books");
-	}
+
+@Given("Hit the book store API")
+public void hit_the_book_store_api() {
+response =RestAssured.get("https://demoqa.com/BookStore/v1/Books");  
+}
+
+
+
 	@Then("validate as status code")
 	public void validate_statusCod_present() {
 		int statusCode=  response.getStatusCode();

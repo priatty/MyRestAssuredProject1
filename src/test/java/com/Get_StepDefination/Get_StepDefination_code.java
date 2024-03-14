@@ -22,22 +22,22 @@ public class Get_StepDefination_code {
 	}
 	@Then("Validate Git Pocket Guide is Present")
 	public void validate_git_pocket_guide_is_present() {
-	   String jsonDataString = response.body().asString();
-	   System.out.println("JSON = " + jsonDataString);
-	   String bookTitle = response.getBody().jsonPath().getString("books[0].title");
-	  
-	   Assert.assertTrue("Title Not Matching", bookTitle.equals("Git Pocket Guide"));
+		String jsonpathString =response.getBody().asString();
+		System.out.println("Json = " + jsonpathString);
+		String bookTitle = response.getBody().jsonPath().getString("books[0].title");
+		Assert.assertTrue("Title not matching" , bookTitle.equals("Git Pocket Guide"));
 	}
 
 
 	@Then("Learning JavaScript Design Patterns is Present")
 public void learning_java_script_design_patterns_is_present() {
-		String jsonDataString = response.body().asString();
-		   System.out.println("JSON1 = " + jsonDataString);
-		   String bookTitle = response.getBody().jsonPath().getString("books[1].title");
-		  
-		   Assert.assertTrue("Title Not Matching", bookTitle.equals("Learning JavaScript Design Patterns is Present"));
-		}
+		String jsonpathString = response.getBody().asString();
+		System.out.println("Json = "+jsonpathString);
+		String bookTitle = response.getBody().jsonPath().getString("books[1].title");
+		System.out.println("Book Title   = " + bookTitle);
+		Assert.assertTrue("Book Title Not Matching", bookTitle.equals("Learning JavaScript Design Patterns"));
+		
+	}
 	
 
 	@Then("validate {string} at jsonpath {string} title present")
