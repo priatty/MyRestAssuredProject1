@@ -15,6 +15,6 @@ import io.cucumber.junit.CucumberOptions;
 		}
 		)
 
-public class MyGetDataRunnerFile {
+public class MyGetDataDrivenRunnerFile {
 
 }

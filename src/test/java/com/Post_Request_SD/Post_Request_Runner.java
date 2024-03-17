@@ -7,11 +7,12 @@ import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		features= {"src/test/resources/com/Post_Request_FF/My_Post_Request_FeatureFile.feature"},
+		features= {"src/test/resources/com/Post_Request_FF"},
 		glue={"com.Post_Request_SD"},
+		tags="@regression",
 		plugin={"pretty",
 				"html:target/cucumber-htmlreport",
-				"json:target/cucumber-report1.json",
+				"json:target/cucumber-report6.json",
 		}
 		)
 

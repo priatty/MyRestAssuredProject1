@@ -1,5 +1,5 @@
 @regression
-Feature: Post request testing1
+Feature: Post request testing2
 
 Scenario: 1post request validation
 Given create user with data

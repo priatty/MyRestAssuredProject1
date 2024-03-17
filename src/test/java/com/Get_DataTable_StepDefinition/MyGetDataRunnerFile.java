@@ -11,7 +11,7 @@ import io.cucumber.junit.CucumberOptions;
 		glue={"com.Get_DataTable_StepDefinition"},
 		plugin={"pretty",
 				"html:target/cucumber-htmlreport",
-				"json:target/cucumber-report1.json",
+				"json:target/cucumber-report4.json",
 		}
 		)
 
